@@ -12,10 +12,10 @@ class CartMapperTest extends PHPUnit_Framework_TestCase
     /**
      * @group hmvc
      */
-    public function testCartMapperIsAnAbstractDataAccessObject()
+    public function testCartMapperIsAnAbstractModel()
     {
         $class = new \ReflectionClass('\StoreCore\Database\CartMapper');
-        $this->assertTrue($class->isSubclassOf('\StoreCore\Database\AbstractDataAccessObject'));
+        $this->assertTrue($class->isSubclassOf('\StoreCore\Database\AbstractModel'));
     }
 
 
